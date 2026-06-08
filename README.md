@@ -126,6 +126,3 @@ As the DecodeLabs guidelines state: “The absolute best way to master Data Anal
 **Data Analytics Intern**
 
 **DecodeLabs Industrial Training Program.**
-
-
-in this readme file add portion of how to run it.
