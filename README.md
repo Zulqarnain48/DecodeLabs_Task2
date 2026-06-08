@@ -60,14 +60,43 @@ The Google Colab script executes the following EDA pipeline:
 
 No external visualisation libraries are required for the core statistical summary. The Colab outputs clear tabular evidence.
 
-# How to Run This Project
+# Key Findings & Business Insights
+
+# Numerical Distributions
+- **Quantity** & **ItemsInCart** are nearly identical (mean ≈3.7, range 1–7) – each order typically contains 3‑4 items.
+- **UnitPrice** varies widely (σ ≈287), indicating a diverse product catalogue from low‑cost to premium.
+- **TotalPrice** ranges from `10.01` to `3998.32` (mean ≈1818) – total order value follows the spread of unit prices and quantities.
+
+# Categorical Highlights
+- **Product** `Phone` is the top seller (136 orders).
+- **PaymentMethod** `Credit Card` dominates (282 uses).
+- **OrderStatus** `Delivered` is most frequent (308 orders) → reliable fulfilment.
+- **ReferralSource** `Social Media` drives most customers (294 referrals).
+- **CouponCode** `SAVE10` is the most used coupon among those who applied one.
+
+# Temporal Trend
+- The data covers **over 1.5 years** (Jan 2023 – Aug 2024), enabling future time‑series analysis of seasonality or growth.
+
+# Missing Data
+- 309 orders have no `CouponCode`. This is **not an error** but an opportunity to analyse promotion uptake vs. non‑promotion behaviour.
+
+# Tools & Libraries
+
+- **Python** 3.8+
+- **Pandas** – data manipulation and statistical summaries
+- **NumPy** – (implicit) array operations
+- **openpyxl** – Excel file reader
+- **Google Colab** – interactive environment
+
+ 
+ # How to Run This Project
 
 You can run the analysis either on **Google Colab** (recommended, no setup) or **locally** on your machine.
 
-# Run on Google Colab
+## Option 1: Run on Google Colab (easiest)
 
 1. **Upload the notebook & dataset to your Google Drive**  
-   - Place `DecodeLab_Task2.ipynb` (or your Colab script) and `Dataset for Data Analytics.xlsx` in the same folder inside Google Drive.
+   - Place `DecodeLabs Task2.ipynb` (or your Colab script) and `Dataset_for_Data_Analytics.xlsx` in the same folder inside Google Drive.
 
 2. **Open with Colab**  
    - Right‑click the `.ipynb` file → “Open with Google Colab”.
@@ -77,12 +106,26 @@ You can run the analysis either on **Google Colab** (recommended, no setup) or *
    from google.colab import drive
    drive.mount('/content/drive')
 
+# Conclusion
+
+This EDA successfully uncovered the digital fingerprint of the business:
+
+- Fast‑moving products (Phone), preferred payment (Credit Card), and effective acquisition channel (Social Media).
+
+- A wide pricing spectrum and missing coupon data point to potential customer segmentation and promotion optimisation.
+
+- The data is clean and ready for deeper modelling – no critical missing values or data type issues.
+
+As the DecodeLabs guidelines state: “The absolute best way to master Data Analytics is through hands‑on practice.” This project builds a real‑world portfolio piece that showcases analytical depth to future employers.
 
 
-**Author**
+# Author
 
 **Zulqarnain Talpur**
 
 **Data Analytics Intern**
 
 **DecodeLabs Industrial Training Program.**
+
+
+in this readme file add portion of how to run it.
